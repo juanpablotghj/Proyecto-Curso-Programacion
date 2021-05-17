@@ -1,0 +1,189 @@
+Admin@DESKTOP-BGQRJG1 MINGW64 /c/xampp/htdocs/Proyecto Final
+$ git init
+Initialized empty Git repository in C:/xampp/htdocs/Proyecto Final/.git/
+
+Admin@DESKTOP-BGQRJG1 MINGW64 /c/xampp/htdocs/Proyecto Final (master)
+$ git add .
+
+Admin@DESKTOP-BGQRJG1 MINGW64 /c/xampp/htdocs/Proyecto Final (master)
+$ git commit -m "Inicio del protecto"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Admin@DESKTOP-BGQRJG1.(none)')
+
+Admin@DESKTOP-BGQRJG1 MINGW64 /c/xampp/htdocs/Proyecto Final (master)
+$ git config --global user.email “juanpablotghj2019@gmail.com”
+
+Admin@DESKTOP-BGQRJG1 MINGW64 /c/xampp/htdocs/Proyecto Final (master)
+$ git config --global user.name “juanpablotghj”
+
+Admin@DESKTOP-BGQRJG1 MINGW64 /c/xampp/htdocs/Proyecto Final (master)
+$ git commit -m "Inicio del proyecto"
+[master (root-commit) 05fab89] Inicio del proyecto
+ 1 file changed, 0 insertions(+), 0 deletions(-)  
+ create mode 100644 index.html
+
+Admin@DESKTOP-BGQRJG1 MINGW64 /c/xampp/htdocs/Proyecto Final (master)
+$ git remote add origin https://github.com/juanpablotghj/Proyecto-Curso-Programacion.git
+
+Admin@DESKTOP-BGQRJG1 MINGW64 /c/xampp/htdocs/Proyecto Final (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 233 bytes | 116.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/juanpablotghj/Proyecto-Curso-Programacion.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Admin@DESKTOP-BGQRJG1 MINGW64 /c/xampp/htdocs/Proyecto Final (master)
+$ git pull origin master
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.70 KiB | 134.00 KiB/s, done.
+From https://github.com/juanpablotghj/Proyecto-Curso-Programacion
+ * branch            master     -> FETCH_HEAD
+   05fab89..68694e9  master     -> origin/master
+Updating 05fab89..68694e9
+Fast-forward
+ index.php | 122 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 122 insertions(+)
+ create mode 100644 index.php
+
+Admin@DESKTOP-BGQRJG1 MINGW64 /c/xampp/htdocs/Proyecto Final (master)
+$ git add .
+
+Admin@DESKTOP-BGQRJG1 MINGW64 /c/xampp/htdocs/Proyecto Final (master)
+$ git commit -m "Estructura de archivos"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Admin@DESKTOP-BGQRJG1 MINGW64 /c/xampp/htdocs/Proyecto Final (master)
+$ git add .
+
+Admin@DESKTOP-BGQRJG1 MINGW64 /c/xampp/htdocs/Proyecto Final (master)
+$ git commit -m "Estructura de carpetas"
+[master 2b275b5] Estructura de carpetas
+ 1 file changed, 13 insertions(+)
+
+Admin@DESKTOP-BGQRJG1 MINGW64 /c/xampp/htdocs/Proyecto Final (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 475 bytes | 475.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/juanpablotghj/Proyecto-Curso-Programacion.git
+   68694e9..2b275b5  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Admin@DESKTOP-BGQRJG1 MINGW64 /c/xampp/htdocs/Proyecto Final (master)
+$ git add .
+
+Admin@DESKTOP-BGQRJG1 MINGW64 /c/xampp/htdocs/Proyecto Final (master)
+$ git commit -m "Estructura de carpetas 2"
+[master 95f8141] Estructura de carpetas 2
+ 6 files changed, 78 insertions(+)
+ create mode 100644 config/index.html
+ create mode 100644 css/index.html
+ create mode 100644 img/index.html
+ create mode 100644 js/index.html
+ create mode 100644 modulos/index.html
+ create mode 100644 perfiles/index.html
+
+Admin@DESKTOP-BGQRJG1 MINGW64 /c/xampp/htdocs/Proyecto Final (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 401 bytes | 401.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/juanpablotghj/Proyecto-Curso-Programacion.git
+   2b275b5..95f8141  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Admin@DESKTOP-BGQRJG1 MINGW64 /c/xampp/htdocs/Proyecto Final (master)
+$ git add .
+warning: LF will be replaced by CRLF in bootstrap/css/bootstrap-grid.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in bootstrap/css/bootstrap-grid.min.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in bootstrap/css/bootstrap-reboot.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in bootstrap/css/bootstrap-reboot.min.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in bootstrap/css/bootstrap.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in bootstrap/css/bootstrap.min.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in bootstrap/js/bootstrap.bundle.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in bootstrap/js/bootstrap.bundle.min.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in bootstrap/js/bootstrap.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in bootstrap/js/bootstrap.min.js.
+The file will have its original line endings in your working directory
+
+Admin@DESKTOP-BGQRJG1 MINGW64 /c/xampp/htdocs/Proyecto Final (master)
+$ git commit -m "Estructura Boostrap"
+[master 936533d] Estructura Boostrap
+ 20 files changed, 26018 insertions(+)
+ create mode 100644 bootstrap/css/bootstrap-grid.css
+ create mode 100644 bootstrap/css/bootstrap-grid.css.map
+ create mode 100644 bootstrap/css/bootstrap-grid.min.css
+ create mode 100644 bootstrap/css/bootstrap-grid.min.css.map
+ create mode 100644 bootstrap/css/bootstrap-reboot.css
+ create mode 100644 bootstrap/css/bootstrap-reboot.css.map
+ create mode 100644 bootstrap/css/bootstrap-reboot.min.css
+ create mode 100644 bootstrap/css/bootstrap-reboot.min.css.map
+ create mode 100644 bootstrap/css/bootstrap.css
+ create mode 100644 bootstrap/css/bootstrap.css.map
+ create mode 100644 bootstrap/css/bootstrap.min.css
+ create mode 100644 bootstrap/css/bootstrap.min.css.map
+ create mode 100644 bootstrap/js/bootstrap.bundle.js
+ create mode 100644 bootstrap/js/bootstrap.bundle.js.map
+ create mode 100644 bootstrap/js/bootstrap.bundle.min.js
+ create mode 100644 bootstrap/js/bootstrap.bundle.min.js.map
+ create mode 100644 bootstrap/js/bootstrap.js
+ create mode 100644 bootstrap/js/bootstrap.js.map
+ create mode 100644 bootstrap/js/bootstrap.min.js
+ create mode 100644 bootstrap/js/bootstrap.min.js.map
+
+Admin@DESKTOP-BGQRJG1 MINGW64 /c/xampp/htdocs/Proyecto Final (master)
+$ git push -u origin master
+Enumerating objects: 26, done.
+Counting objects: 100% (26/26), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (25/25), 453.29 KiB | 4.67 MiB/s, done.
+Total 25 (delta 12), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (12/12), completed with 1 local object.
+To https://github.com/juanpablotghj/Proyecto-Curso-Programacion.git
+   95f8141..936533d  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Admin@DESKTOP-BGQRJG1 MINGW64 /c/xampp/htdocs/Proyecto Final (master)
+$
+
+
+
+
+
