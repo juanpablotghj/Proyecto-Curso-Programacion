@@ -19,7 +19,7 @@
     $conexion = new Database;  
     $result = $conexion->editEmpleados($id);
 
-    $emp_id = $emp_nombres = $emp_apellidos = $emp_email = $emp_ciudad = $emp_identificacion = $tipo = $sede = "";
+    $emp_id = $emp_nombres = $emp_apellidos = $emp_email = $emp_ciudad = $emp_identificacion = $tipo = $sede = $emp_salario  = "";
     foreach($result->fetchAll(PDO::FETCH_OBJ) as $r){
         $emp_id = $r->id;
         $emp_nombres = $r->nombres;
@@ -29,6 +29,7 @@
         $emp_identificacion = $r->identificacion;
         $emp_tipo = $r->tipo;
         $emp_sede = $r->sede;
+        $emp_salario = $r->salario;
     }
 
 
@@ -68,7 +69,7 @@
                         <a href="<?= ROOT ?>modulos/empleados/empleados.php" class="btn btn-primary">Regresar</a>
                     </div>
                     <div class="card-body">
-                        <form action="update.php" method="POST" name="forrol">
+                        <form action="update.php" method="POST" name="forempleado">
                             <div class="form-group">
                                 <label for="identificacion">Identificacion</label>
                                 <input type="text" class="form-control" id="identificacion" name="identificacion" value="<?= $emp_identificacion ?>" required>
@@ -153,6 +154,11 @@
                                         }
                                     ?>
                                 </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="salario">Salario</label>
+                                <input type="text" class="form-control" id="salario" name="salario" value="<?= $emp_salario ?>" required>
                             </div>
                             
                             <button type="submit" class="btn btn-primary">Actualizar</button>

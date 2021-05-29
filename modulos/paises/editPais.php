@@ -49,7 +49,7 @@
                         <a href="<?= ROOT ?>modulos/paises/paises.php" class="btn btn-primary">Regresar</a>
                     </div>
                     <div class="card-body">
-                        <form action="update.php" method="POST" name="forrol">
+                        <form action="update.php" method="POST" name="forpais">
                             <div class="form-group">
                                 <label for="nombre">Nombre</label>
                                 <input type="text" class="form-control" id="nombre" name="nombre" value="<?= $pais_nombre ?>" required>

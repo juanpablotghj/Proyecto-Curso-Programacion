@@ -115,12 +115,12 @@
                                 <label for="ciudad">Ciudad</label>
                                 <select class="form-control" id="ciudad" name="ciudad">
                                     <option value=''>Seleccione una Ciudad</option>
-                                    <?php 
-                                        foreach($ciudades as $ciudad) {
-                                            echo "<option value='".$ciudad['id']."'>".$ciudad['nombre']."</option>";
-                                        }
-                                    ?>
                                 </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="salario">Salario</label>
+                                <input type="text" class="form-control" id="salario" name="salario" required>
                             </div>
                             
                             <input type="button" class="btn btn-primary" onclick="ValidarEmpleados()" value='Crear'>
@@ -131,8 +131,18 @@
         </div>
     <div>
 
-    <script src="../../js/javascript.js" ></script>
+    <script src="../../js/jquery.min.js" ></script>
     <script src="../../js/validaciones.js" ></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#pais").change(function(){
+                $.get("get_ciudades.php","pais="+$("#pais").val(), function(data){
+                    $("#ciudad").html(data);
+                    console.log(data);
+                });
+            });
+        });
+    </script>
     <script src="../../bootstrap/js/bootstrap.bundle.min.js" ></script>
 </body>
 </html>

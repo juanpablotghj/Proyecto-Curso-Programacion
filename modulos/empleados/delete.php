@@ -6,8 +6,8 @@
     $id = $_GET['id'];
 
     $conexion = new Database;  
-    $result = $conexion->EliminarUsuario($id);
+    $result = $conexion->EliminarEmpleado($id);
 
-    header("Location: ".ROOT."modulos/usuarios/usuarios.php?mensaje=".$result);
+    header("Location: ".ROOT."modulos/empleados/empleados.php?mensaje=".$result);
 
 ?>

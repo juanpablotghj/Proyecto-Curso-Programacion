@@ -54,7 +54,7 @@
                         <a href="<?= ROOT ?>modulos/ciudades/ciudades.php" class="btn btn-primary">Regresar</a>
                     </div>
                     <div class="card-body">
-                        <form action="update.php" method="POST" name="forrol">
+                        <form action="update.php" method="POST" name="forciudad">
                             <div class="form-group">
                                 <label for="nombre">Nombre</label>
                                 <input type="text" class="form-control" id="nombre" name="nombre" value="<?= $ciu_nombre ?>" required>

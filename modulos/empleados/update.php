@@ -11,9 +11,10 @@
     if(isset($_POST['identificacion'])) $identificacion = $_POST['identificacion']; 
     if(isset($_POST['tipo']))           $tipo = $_POST['tipo']; 
     if(isset($_POST['sede']))           $sede = $_POST['sede']; 
+    if(isset($_POST['salario']))        $salario = $_POST['salario']; 
     
     $conexion = new Database;  
-    $result = $conexion->updateEmpleado($id,$nombres,$apellidos,$email,$ciudad,$identificacion,$tipo,$sede);
+    $result = $conexion->updateEmpleado($id,$nombres,$apellidos,$email,$ciudad,$identificacion,$tipo,$sede,$salario);
 
     header("Location: ".ROOT."modulos/empleados/empleados.php?mensaje=".$result);
 

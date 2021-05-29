@@ -42,6 +42,11 @@
                         <a href="<?= ROOT ?>modulos/empleados/addEmpleado.php" class="btn btn-primary">Crear Empleado</a>
                     </div>
                     <div class="card-body">
+
+                        <div class="form-group">
+                            <input type="text" class="form-control pull-right" style="width:30%" id="search" placeholder="Escriba para buscar...">
+                        </div>
+
                         <?php 
                             $mensajes = array(
                                 0=>"No se pudo realizar la acción, comunicate con el administrador",
@@ -63,7 +68,7 @@
                         ?> 
 
 
-                        <table class="table">
+                        <table id="mytable" class="table">
                             <thead>
                                 <tr>
                                 <th scope="col">#</th>
@@ -99,7 +104,9 @@
         </div>
     <div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="../../js/javascript.js" ></script>
+    <script src="../../js/buscar.js" ></script>
     <script src="../../bootstrap/js/bootstrap.bundle.min.js" ></script>
 </body>
 </html>
